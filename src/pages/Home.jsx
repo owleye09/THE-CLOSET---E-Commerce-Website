@@ -10,7 +10,7 @@ function Home() {
   const search = searchParams.get("search");
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/products")
+    fetch("https://the-closet-e-commerce-website.onrender.com/api/products")
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((error) => console.log("Error fetching products:", error));
