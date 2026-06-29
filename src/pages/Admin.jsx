@@ -9,12 +9,12 @@ function Admin() {
   const [message, setMessage] = useState("");
 
   const fetchAdminData = () => {
-    fetch("http://localhost:5000/api/products")
+    fetch("https://the-closet-e-commerce-website.onrender.com/api/products")
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((error) => console.log("Error fetching products:", error));
 
-    fetch("http://localhost:5000/api/orders")
+    fetch("https://the-closet-e-commerce-website.onrender.com/api/orders")
       .then((res) => res.json())
       .then((data) => setOrders(data))
       .catch((error) => console.log("Error fetching orders:", error));
@@ -44,7 +44,7 @@ function Admin() {
     };
 
     try {
-      const res = await fetch("http://localhost:5000/api/products", {
+      const res = await fetch("https://the-closet-e-commerce-website.onrender.com/api/products", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
