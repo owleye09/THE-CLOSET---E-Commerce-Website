@@ -12,7 +12,7 @@ function Register(){
     const password = e.target[2].value;
 
     try {
-      const res = await fetch("http://localhost:5000/api/auth/register", {
+      const res = await fetch("https://the-closet-e-commerce-website.onrender.com/api/auth/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
